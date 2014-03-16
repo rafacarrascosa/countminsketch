@@ -2,11 +2,9 @@ CountMinSketch
 ==============
 
 This is a minimalistic
-`Count-min Sketch <http://en.wikipedia.org/wiki/Count%E2%80%93min_sketch>`
+`Count-min Sketch <http://en.wikipedia.org/wiki/Count%E2%80%93min_sketch>`_
 for Python, featuring some cool things like:
-
- - Being able to count anything that is hash-able by python (numbers, strings,
-tuples, inmutables, duck-typeds, etc.).
+ - Being able to count anything that is hash-able by python (numbers, strings, tuples, inmutables, duck-typeds, etc.).
  - Tests
  - No dependencies
  - No foreign languages, just 100% python.
