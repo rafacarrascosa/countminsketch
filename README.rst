@@ -16,7 +16,7 @@ Usage
 .. code-block:: python
 
     from countminsketch import CountMinSketch
-    sketch = CountMinSketch(1000, 10)  # 10 hash functions, 1000 places per hash function
+    sketch = CountMinSketch(1000, 10)  # table size=1000, hash functions=10
     sketch.update("oh yeah")
     sketch.update(tuple())
     sketch.update(1, value=123)
@@ -26,8 +26,22 @@ Usage
     print sketch["non-existent"]  # prints 0
 
 
+Install
+=======
+
+CountMinSketch is on PyPI, so you can install it with
+
+    pip install countminsketch
+
+
 License
 =======
 
 BSD 3-clause, see the LICENSE file.
 
+
+Author
+======
+
+This was written by Rafael Carrascosa, you can contact me at rafacarrascosa on
+gmail.
