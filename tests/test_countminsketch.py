@@ -21,7 +21,7 @@ class TestCountMinSketch(unittest.TestCase):
         N = 1000
         sketch = CountMinSketch(10, 5)
         for _ in xrange(N):
-            sketch.update("a")
+            sketch.add("a")
         self.assertEqual(sketch.query("a"), N)
         self.assertEqual(sketch.query("b"), 0)
         self.assertEqual(len(sketch), N)
@@ -29,7 +29,7 @@ class TestCountMinSketch(unittest.TestCase):
     def test_syntax_sugar(self):
         sketch = CountMinSketch(10, 5)
         self.assertEqual(sketch.query("a"), sketch["a"])
-        sketch.update("a")
+        sketch.add("a")
         self.assertEqual(sketch.query("a"), sketch["a"])
 
     def test_counts_overestimate(self):
@@ -37,13 +37,13 @@ class TestCountMinSketch(unittest.TestCase):
         counter = Counter(text)
         sketch = CountMinSketch(10, 5)
         for x in text:
-            sketch.update(x)
+            sketch.add(x)
         for x in set(text):
             self.assertGreaterEqual(sketch[x], counter[x])
 
-    def test_updates_greater_than_one(self):
+    def test_add_greater_than_one(self):
         sketch = CountMinSketch(10, 5)
-        sketch.update("a", 123)
+        sketch.add("a", 123)
         self.assertEqual(sketch.query("a"), 123)
 
 
