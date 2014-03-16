@@ -19,7 +19,7 @@ setup(
     author_email="rafacarrascosa@gmail.com",
     py_modules=["countminsketch"],
     install_requires=[],
-
+    url="https://github.com/rafacarrascosa/countminsketch",
     keywords=["countminsketch", "count", "counting", "count min sketch",
               "count-min sketch", "randomized algorithm"],
     classifiers=[
