@@ -7,11 +7,11 @@ class CountMinSketch(object):
     """
     A class for counting hashable items using the Count-min Sketch strategy.
     It fulfills a similar purpose than `itertools.Counter`.
-    
+
     The Count-min Sketch is a randomized data structure that uses a constant
     amount of memory and has constant insertion and lookup times at the cost
     of an arbitrarily small overestimation of the counts.
-    
+
     It has two parameters:
      - `m` the size of the hash tables, larger implies smaller overestimation
      - `d` the amount of hash tables, larger implies lower probability of
@@ -60,9 +60,9 @@ class CountMinSketch(object):
         """
         Count element `x` as if had appeared `value` times.
         By default `value=1` so:
-        
+
             sketch.add(x)
-        
+
         Effectively counts `x` as occurring once.
         """
         self.n += value
