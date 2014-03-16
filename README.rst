@@ -9,6 +9,9 @@ for Python, featuring some cool things like:
  - No dependencies
  - No foreign languages, just 100% python.
 
+This software was written by Rafael Carrascosa, you can contact me at
+rafacarrascosa on gmail.
+
 
 Usage
 =====
@@ -38,10 +41,3 @@ License
 =======
 
 BSD 3-clause, see the LICENSE file.
-
-
-Author
-======
-
-This was written by Rafael Carrascosa, you can contact me at rafacarrascosa on
-gmail.
