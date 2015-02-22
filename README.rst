@@ -20,9 +20,9 @@ Usage
 
     from countminsketch import CountMinSketch
     sketch = CountMinSketch(1000, 10)  # table size=1000, hash functions=10
-    sketch.update("oh yeah")
-    sketch.update(tuple())
-    sketch.update(1, value=123)
+    sketch.add("oh yeah")
+    sketch.add(tuple())
+    sketch.add(1, value=123)
     print sketch["oh yeah"]       # prints 1
     print sketch[tuple()]         # prints 1
     print sketch[1]               # prints 123
