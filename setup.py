@@ -16,7 +16,7 @@ if os.path.isfile(readme_path):
 
 setup(
     name="countminsketch",
-    version="0.1",
+    version="0.2",
     description="A minimalistic Count-min Sketch for Python",
     long_description=long_description,
     author="Rafael Carrascosa",
